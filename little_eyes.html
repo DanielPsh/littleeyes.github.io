@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LittleEyes.World</title>
+  <style>
+    /* Apple-inspired minimal reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #1d1d1f;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Layout */
+    section {
+      padding: 120px 24px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* Typography */
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 720px;
+      color: #6e6e73;
+    }
+
+    /* Hero */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 28px;
+      object-fit: cover;
+    }
+
+    /* Image blocks */
+    .image-block img {
+      width: 100%;
+      margin-top: 48px;
+      border-radius: 28px;
+    }
+
+    /* Philosophy cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .card {
+      padding: 40px;
+      border-radius: 28px;
+      background-color: #f5f5f7;
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 80px 24px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #86868b;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section>
+    <div class="container hero">
+      <div>
+        <h1>LittleEyes.World</h1>
+        <p>
+          A camera is not the product.<br />
+          Perspective is.
+        </p>
+      </div>
+      <div>
+        <img src=1.png/>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section>
+    <div class="container">
+      <h2>The missing perspective</h2>
+      <p>
+        Most childhood photos are taken by adults. They capture what parents thought mattered,
+        not what the child actually noticed. A child’s true perspective is rarely preserved.
+      </p>
+      <div class="image-block">
+        <img src=2.png/>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section>
+    <div class="container">
+      <h2>Our design philosophy</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Less technology</h3>
+          <p>
+            No screens. No algorithms. No social sharing.
+            The camera does less so memories can mean more.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Child autonomy</h3>
+          <p>
+            Children decide what matters.
+            There is no instruction on what to capture.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Designed by limits</h3>
+          <p>
+            Constraints are not flaws.
+            They are intentional design decisions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT -->
+  <section>
+    <div class="container">
+      <h2>An object, not a gadget</h2>
+      <p>
+        Small, durable, and personal.
+        A memory object designed to live in a child’s hand,
+        not on a screen.
+      </p>
+      <div class="image-block">
+        <img src=3.png/>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE -->
+  <section>
+    <div class="container">
+      <h2>Beyond the camera</h2>
+      <p>
+        One day, these images may become archives, books, or exhibitions —
+        a cultural record of how children once saw the world.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © LittleEyes.World — Designed to preserve perspective.
+  </footer>
+
+</body>
+</html>
